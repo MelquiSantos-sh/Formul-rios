@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tudo">
+        <form>
+        <label>
+            Data de nascimento
+            <input type="date" placeholder="data de nascimento" name="nascimento">
+        </label>
+        <label>Escolaridade
+            <select>
+                <option value=""></option>
+                <option value="Ensino Fundamental">Ensino Fundamental</option>
+                <option value="Ensino Medio">Ensino Medio</option>
+                <option value="Ensino Superior">Ensino Superior</option>
+            </select>
+        </label>
+
+        <label> Situação da escolaridade
+             
+            <input type="radio" name="escolaride" value="1"/>
+                <span><b>Completo</b> </span>
+                
+            <input type="radio" name="escolaride" value="2"/>
+                <span><b>Imcompleto</b> </span>
+           
+        </label>
+
+        <label>Nacionalidade
+            <option value=""></option>
+            <option value="Brasil">Brasil</option>
+            <option value="Paraguai">Paraguai</option>
+            <option value="Argentina">Argentina</option>
+            
+        </label>
+
+
+        </form>
+    </div>
+    
+</body>
+</html>
