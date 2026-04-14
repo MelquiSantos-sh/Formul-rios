@@ -1,0 +1,50 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 1 - Formulário</title>
+    <link rel="stylesheet" href="ex1.css">
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-grid">
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="text" id="nascimento" placeholder="dd/mm/aaaa">
+
+      <label for="escolaridade">Escolaridade:</label>
+      <select id="escolaridade">
+        <option>Ensino Fundamental</option>
+        <option>Ensino Médio</option>
+        <option>Ensino Superior</option>
+      </select>
+
+      <label>Situação da Escolaridade:</label>
+      <div class="radio-group">
+        <input type="radio" name="situacao" id="completo">
+        <label for="completo">Completo</label>
+        <input type="radio" name="situacao" id="incompleto">
+        <label for="incompleto">Incompleto</label>
+      </div>
+
+      <label for="nacionalidade">Nacionalidade:</label>
+      <select id="nacionalidade">
+        <option>Brasil</option>
+        <option>Outro</option>
+      </select>
+
+      <label for="uf">UF onde nasceu:</label>
+      <select id="uf">
+        <option>Paraná</option>
+        <option>São Paulo</option>
+        <option>Minas Gerais</option>
+        <option>Rio de Janeiro</option>
+      </select>
+
+      <div class="btn-row">
+        <button class="btn-enviar">enviar</button>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
