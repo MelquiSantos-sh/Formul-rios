@@ -1,61 +1,61 @@
 
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url("634405.webp");
+    margin: 0;  // remove a margem padrão do corpo
+    padding: 0; // remove o preenchimento padrão do corpo
+    background-image: url("634405.webp"); // define a imagem de fundo do corpo
 }
 
 h2 {
-    color: whitesmoke;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke; // define a cor do texto do título
+    text-align: center; // alinha o texto do título ao centro
+    margin-bottom: 30px; // define a margem inferior do título para criar um espaçamento em relação aos campos abaixo
+    font-family: Arial, Helvetica, sans-serif;  // define a fonte do título
 }
 
 form {
-    width: 800px;
-    margin: auto;
-    margin-top: 200px;
-    border: 1px solid white;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(51, 50, 50, 0.822);
+    width: 800px; // define a largura do formulário
+    margin: auto; // centraliza o formulário horizontalmente
+    margin-top: 200px; // define a margem superior do formulário para criar um espaçamento em relação ao topo da página
+    border: 1px solid white; // define a borda do formulário
+    padding: 20px; // define o preenchimento interno do formulário
+    border-radius: 5px; // define o raio da borda para criar cantos arredondados
+    background-color: rgba(51, 50, 50, 0.822); // define a cor de fundo do formulário com transparência
 }
 
 span:first-child {
-    color: white;
-    text-align: right;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    color: white; // define a cor do texto do primeiro span
+    text-align: right; // alinha o texto do primeiro span à direita
+    font-family: Arial, Helvetica, sans-serif; // define a fonte do primeiro span
+    font-weight: bold; // define o peso da fonte do primeiro span
 
 }
 
 div>span {
-    color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white; // define a cor do texto dos spans filhos de div
+    font-weight: bold;  // define o peso da fonte dos spans filhos de div
+    font-family: Arial, Helvetica, sans-serif; // define a fonte dos spans filhos de div
 }
 
-label {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 15px;
-    padding: 10px;
+label { 
+    display: grid;  // exibe os elementos em forma de grade
+    grid-template-columns: 80px 1fr; // define as colunas da grade, a primeira com largura fixa e a segunda ocupando o restante do espaço
+    gap: 15px;      // define o espaço entre os elementos da grade
+    padding: 10px; // define o preenchimento interno do rótulo
 }
 
 input,
 select {
-    padding: 5px;
-    border: 2px solid rgb(150, 127, 25);
+    padding: 5px; // define o preenchimento interno dos campos de entrada e seleção
+    border: 2px solid rgb(150, 127, 25);  // define a borda dos campos de entrada e seleção
 }
 
 div {
-    display: flex;
-    gap: 9px;
+    display: flex; // exibe os elementos em linha
+    gap: 9px; // define o espaço entre os itens da linha
 }
 
 button {
-    margin-left: 105px;
-    padding: 5px;
-    color: navy;
+    margin-left: 105px; // define a margem esquerda do botão para centralizá-lo em relação ao formulário
+    padding: 5px;// define o preenchimento interno do botão
+    color: navy; // define a cor do texto do botão
 }

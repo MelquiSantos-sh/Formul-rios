@@ -1,40 +1,40 @@
-form {
-    width: 500px;
+form { // estilo para o formulário
+    width: 500px;// largura do formulário
 }
 
-label {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 5px;
-    padding-top: 10px;
-
-}
-
-span:first-child {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    text-align: right;
-}
-
-div>span {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(32, 32, 32);
+label { // estilo para os rótulos dos campos do formulário
+    display: grid; // exibe os elementos em forma de grade
+    grid-template-columns: 180px 1fr;// define as colunas da grade, a primeira com largura fixa e a segunda ocupando o restante do espaço
+    gap: 5px;// define o espaço entre os elementos da grade
+    padding-top: 10px;// define o espaçamento interno superior do rótulo
 
 }
 
-input,
-select {
-    padding: 5px;
+span:first-child {// seleciona o primeiro span dentro do label
+    font-family: Arial, Helvetica, sans-serif;// define a fonte do primeiro span
+    color: black; // define a cor do texto do primeiro span
+    text-align: right; // alinha o texto do primeiro span à direita
 }
 
-.linha {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+div>span {// seleciona os spans que são filhos diretos de div
+    font-family: Arial, Helvetica, sans-serif;//    
+    color: rgb(32, 32, 32);  // define a cor do texto dos spans filhos de div
+
 }
 
-button {
-    margin-left: 185px;
-    margin-top: 10px;
-    padding: 5px;
+input, // estilo para os campos de entrada de texto
+select {  //   estilo para os campos de seleção
+    padding: 5px; // define o espaçamento interno dos campos de entrada e seleção
+}
+
+.linha {        // estilo para a linha de opções de gênero
+    display: flex;// exibe os elementos em linha
+    align-items: center; // alinha os itens verticalmente ao centro
+    gap: 8px; // define o espaço entre os itens da linha
+}
+
+button { // estilo para o botão de envio do formulário
+    margin-left: 185px; // define a margem esquerda do botão para centralizá-lo em relação ao formulário
+    margin-top: 10px;  // define a margem superior do botão para criar um espaçamento em relação aos campos acima
+    padding: 5px;  // define o espaçamento interno do botão
 }
