@@ -7,31 +7,34 @@
 </head>
 
 <body>
-  <div class="form-container">
+  <div class="container">
     <div class="form-grid">
 
       <label for="nascimento">Data de nascimento:</label>
-      <input type="text" id="nascimento" placeholder="dd/mm/aaaa">
+      <input type="date" id="nascimento" placeholder="dd/mm/aaaa">
 
       <label for="escolaridade">Escolaridade:</label>
       <select id="escolaridade">
-        <option>Ensino Fundamental</option>
-        <option>Ensino Médio</option>
-        <option>Ensino Superior</option>
+        <option value="vazio"></option>
+        <option value="Ensino fundamental">Ensino Fundamental</option>
+        <option value="Ensino medio">Ensino Médio</option>
+        <option value="Ensino superior">Ensino Superior</option>
       </select>
 
       <label>Situação da Escolaridade:</label>
       <div class="radio-group">
         <input type="radio" name="situacao" id="completo">
-        <label for="completo">Completo</label>
+        <label for="completo"><b>Completo</b></label>
         <input type="radio" name="situacao" id="incompleto">
-        <label for="incompleto">Incompleto</label>
+        <label for="incompleto"><b>Incompleto</b></label>
       </div>
 
       <label for="nacionalidade">Nacionalidade:</label>
       <select id="nacionalidade">
+        <option></option>
         <option>Brasil</option>
-        <option>Outro</option>
+        <option>Paraguai</option>
+        <option>Argentina</option>
       </select>
 
       <label for="uf">UF onde nasceu:</label>
