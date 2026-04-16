@@ -1,0 +1,40 @@
+form {
+    width: 500px;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 5px;
+    padding-top: 10px;
+
+}
+
+span:first-child {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: right;
+}
+
+div>span {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+
+}
+
+input,
+select {
+    padding: 5px;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button {
+    margin-left: 185px;
+    margin-top: 10px;
+    padding: 5px;
+}

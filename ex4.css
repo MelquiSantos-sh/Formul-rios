@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("634405.webp");
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    width: 800px;
+    margin: auto;
+    margin-top: 200px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(51, 50, 50, 0.822);
+}
+
+span:first-child {
+    color: white;
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+div>span {
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+input,
+select {
+    padding: 5px;
+    border: 2px solid rgb(150, 127, 25);
+}
+
+div {
+    display: flex;
+    gap: 9px;
+}
+
+button {
+    margin-left: 105px;
+    padding: 5px;
+    color: navy;
+}

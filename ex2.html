@@ -1,67 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade2</title>
-    <style>
-        
-        form{
-            width: 500px;
-        }
-        
-        label{
-            display: grid;
-            grid-template-columns: 180px 1fr;
-            gap: 5px;
-            padding-top: 10px;
-
-        }
-        span:first-child{
-            font-family: Arial, Helvetica, sans-serif;
-            color: black;
-            text-align: right; 
-        }
-        div > span{
-            font-family: Arial, Helvetica, sans-serif;
-            color: rgb(32, 32, 32);
-    
-        }
-        input, select{
-            padding: 5px;
-        }
-        .linha{
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-        button{
-            margin-left: 185px;
-            margin-top: 10px;
-            padding: 5px;
-        }
-
-        
-        
-
-    </style>
+    <link rel="stylesheet" href="/ex2.css">
 </head>
+
 <body>
-     <form>
-            
-       
-         <label>
+    <form>
+
+
+        <label>
             <span>Nome</span>
-            <input  required placeholder="Nome" type="text" name="nome">
-         </label>
-       
-        
+            <input required placeholder="Nome" type="text" name="nome">
+        </label>
+
+
         <label>
             <span>Email</span>
             <input required placeholder="user@example.org" type="email" name="email">
         </label>
-    
-        
+
+
         <label>
             <span>Password</span>
             <input type="password" minlength="6" required placeholder="6 caracteres" name="senha">
@@ -70,7 +32,7 @@
         <label>
             <span>Possui conhecimento?</span>
             <div class="linha">
-                <input type="checkbox" name="conhecimentos" value="1">    
+                <input type="checkbox" name="conhecimentos" value="1">
                 <span>JavaScript</span>
                 <input type="checkbox" name="conhecimentos" value="2">
                 <span>HTML</span>
@@ -78,7 +40,7 @@
                 <span>CSS</span>
             </div>
         </label>
-        
+
         <label>
             <span>Curso</span>
             <select name="cursos">
@@ -95,16 +57,17 @@
                 <span>Tarde</span>
                 <input type="radio" name="turno" value="2">
                 <span>Noite</span>
-       
+
             </div>
-         </label>
+        </label>
         <label>
             <span class="aff">Motivo matrícula</span>
             <textarea name="motivo" cols="22" rows="6"></textarea>
         </label>
-            
+
         <button>Enviar</button>
-        </form>
-    
+    </form>
+
 </body>
+
 </html>
