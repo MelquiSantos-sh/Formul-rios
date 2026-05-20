@@ -55,3 +55,82 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+<!-- for + id nos labels — quando o for do <label> coincide com o id do campo, clicar no texto do label já foca/ativa o campo. É acessibilidade básica.
+name nos radio buttons — o atributo name="situacao" é o que faz os dois radios se comportarem como um grupo: selecionar um desmarca o outro automaticamente.
+value nos <option> — nos selects de nacionalidade e UF as options não têm value explícito, então o valor enviado pelo formulário será o próprio texto visível. No select de escolaridade há value separado do texto.
+<button> sem type — sem type="submit" ou type="button", o comportamento padrão dentro de um formulário seria submeter a página, mas aqui não há tag <form>, então o botão não faz nada funcional ainda. -->
+<body>
+
+  <!-- Div principal que centraliza e envolve todo o conteúdo -->
+  <div class="container">
+
+    <!-- Grade do formulário — organiza os campos em duas colunas (label + input) via CSS -->
+    <div class="form-grid">
+
+      <!-- CAMPO: Data de nascimento -->
+      <!-- O "for" do label precisa bater com o "id" do input para vinculá-los -->
+      <label for="nascimento">Data de nascimento:</label>
+      <!-- type="date" exibe um seletor de data nativo do navegador -->
+      <input type="date" id="nascimento" placeholder="dd/mm/aaaa">
+
+      <!-- CAMPO: Escolaridade -->
+      <label for="escolaridade">Escolaridade:</label>
+      <!-- Select cria uma lista suspensa (dropdown) -->
+      <select id="escolaridade">
+        <!-- Opção vazia = nenhuma seleção inicial / placeholder visual -->
+        <option value="vazio"></option>
+        <option value="Ensino fundamental">Ensino Fundamental</option>
+        <option value="Ensino medio">Ensino Médio</option>
+        <option value="Ensino superior">Ensino Superior</option>
+      </select>
+
+      <!-- CAMPO: Situação da Escolaridade (radio buttons) -->
+      <!-- Este label NÃO tem "for", pois não aponta para um único input -->
+      <label>Situação da Escolaridade:</label>
+      <!-- Div agrupa os dois radio buttons lado a lado -->
+      <div class="radio-group">
+        <!-- name="situacao" agrupa os radios — só um pode ser selecionado por vez -->
+        <input type="radio" name="situacao" id="completo">
+        <!-- Label clicável vinculado ao radio pelo "for" + "id" -->
+        <label for="completo"><b>Completo</b></label>
+
+        <input type="radio" name="situacao" id="incompleto">
+        <label for="incompleto"><b>Incompleto</b></label>
+      </div>
+
+      <!-- CAMPO: Nacionalidade -->
+      <label for="nacionalidade">Nacionalidade:</label>
+      <select id="nacionalidade">
+        <option></option> <!-- Opção vazia inicial -->
+        <option>Brasil</option>
+        <option>Paraguai</option>
+        <option>Argentina</option>
+      </select>
+
+      <!-- CAMPO: UF onde nasceu -->
+      <label for="uf">UF onde nasceu:</label>
+      <select id="uf">
+        <option></option> <!-- Opção vazia inicial -->
+        <option>Paraná</option>
+        <option>São Paulo</option>
+        <option>Minas Gerais</option>
+        <option>Rio de Janeiro</option>
+      </select>
+
+      <!-- BOTÃO de envio — div usada para posicionamento via CSS -->
+      <div class="btn-row">
+        <button>enviar</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

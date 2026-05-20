@@ -63,3 +63,104 @@ body {
       font-size: 13px;
       cursor: pointer;
 }
+
+
+
+
+
+
+Claro! Aqui está o CSS comentado e explicado:
+css/* ── BODY ─────────────────────────────────────────────────────
+   Estilo base aplicado à página inteira                        */
+body {
+  font-family: 'Courier New', monospace; /* Fonte monoespaçada; se não encontrar, usa qualquer monospace do sistema */
+  background: #f5f5f5;                   /* Fundo cinza bem clarinho para a página */
+  padding: 20px;                         /* Espaço interno para o conteúdo não colar nas bordas da janela */
+}
+
+/* ── CONTAINER ────────────────────────────────────────────────
+   Caixa verde que envolve o formulário                         */
+.container {
+  background: #c8f0b0;          /* Fundo verde claro */
+  border: 1px solid #aad88a;    /* Borda fina, verde um pouco mais escuro que o fundo */
+  border-radius: 6px;           /* Cantos levemente arredondados */
+  padding: 24px 32px 20px;      /* Espaço interno: 24px em cima, 32px nas laterais, 20px embaixo */
+  max-width: 560px;             /* Largura máxima — em telas menores encolhe; nunca passa de 560px */
+}
+
+/* ── FORM-GRID ────────────────────────────────────────────────
+   Grade de duas colunas que alinha labels à esquerda
+   e campos à direita                                           */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas de tamanho igual (50% cada) */
+  gap: 14px 12px;                 /* Espaço entre linhas: 14px | entre colunas: 12px */
+  align-items: center;            /* Alinha verticalmente label e campo no centro de cada linha */
+}
+
+/* ── LABELS DENTRO DA GRADE ───────────────────────────────────
+   Estilo dos textos descritivos dos campos                     */
+.form-grid label {
+  color: #2a5bbf;       /* Azul médio */
+  font-size: 14px;
+  text-align: right;    /* Empurra o texto para perto do campo ao lado */
+  font-weight: 500;     /* Semi-negrito (entre normal=400 e negrito=700) */
+}
+
+/* ── INPUTS DE TEXTO E SELECTS ────────────────────────────────
+   Aparência uniforme para caixas de texto e dropdowns.
+   Observação: input[type="date"] NÃO está listado aqui,
+   então o campo de data não herda esses estilos!               */
+.form-grid input[type="text"],
+.form-grid select {
+  font-size: 13px;
+  padding: 4px 8px;               /* Espaço interno: 4px vertical, 8px horizontal */
+  border: 1px solid #aaa;         /* Borda cinza */
+  border-radius: 3px;             /* Cantos ligeiramente arredondados */
+  background: #fff;               /* Fundo branco */
+  height: 28px;                   /* Altura fixa para manter uniformidade visual */
+  width: 100%;                    /* Ocupa toda a coluna disponível */
+  box-sizing: border-box;         /* Garante que padding e border não "estourem" a largura */
+}
+
+/* ── RADIO GROUP ──────────────────────────────────────────────
+   Agrupa os dois radio buttons (Completo / Incompleto)
+   lado a lado                                                  */
+.radio-group {
+  display: flex;          /* Coloca os filhos em linha */
+  align-items: center;    /* Alinha verticalmente o círculo do radio com o texto */
+  gap: 16px;              /* Espaço entre os dois radios */
+  font-size: 14px;
+}
+
+/* Sobrescreve o estilo azul/direita dos labels da grade
+   só para os labels dentro do radio-group                      */
+.radio-group label {
+  color: #222;          /* Quase preto, diferente do azul da grade */
+  font-weight: 400;     /* Peso normal (o <b> no HTML já cuida do negrito) */
+  text-align: left;     /* Alinha à esquerda, ao contrário dos outros labels */
+}
+
+/* ── BTN-ROW ──────────────────────────────────────────────────
+   Div que contém o botão Enviar                                */
+.btn-row {
+  grid-column: 1 / -1; /* Ocupa as duas colunas da grade (da coluna 1 até a última) */
+  margin-top: 8px;      /* Pequeno espaço acima do botão */
+}
+
+/* ── BTN-ENVIAR ───────────────────────────────────────────────
+   Estilo do botão — mas atenção: no HTML o botão não tem
+   a classe .btn-enviar, então estes estilos NÃO são aplicados! */
+.btn-enviar {
+  background: #e0e0e0;      /* Fundo cinza claro */
+  border: 2px outset #ccc;  /* Borda com efeito 3D "elevado" (estilo antigo de botão) */
+  padding: 4px 14px;
+  font-size: 13px;
+  cursor: pointer;          /* Muda o cursor para mãozinha ao passar o mouse */
+}
+
+
+
+
+/* input[type="date"] sem estilo — o seletor cobre apenas input[type="text"] e select. O campo de data fica com aparência padrão do navegador, diferente dos demais. Para corrigir, basta adicionar input[type="date"] ao seletor.
+Classe .btn-enviar nunca usada — o botão no HTML é simplesmente <button>enviar</button>, sem nenhuma classe. Os estilos definidos em .btn-enviar existem no CSS mas não são aplicados em lugar nenhum. Para corrigir, adicionar class="btn-enviar" ao <button> no HTML. */
